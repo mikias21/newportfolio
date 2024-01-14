@@ -18,10 +18,10 @@ const Projects = () => {
       </div>
       <div className="w-full sm:w-1/2 sm:pr-2 md:w-1/2 lg:w-1/2 xl:w-1/4 mb-5 md:pr-3">
         <ProjectItem
-          img="https://assets-global.website-files.com/6515a6d5f30daec433d0abe2/651716fd2b486642ab9f4cde_Tablet%202708x1598.webp"
-          title="Here is title"
-          desc="This will be the description about the project and some"
-          techs={["React js", "Node", "Redux", "Mongo"]}
+          img="/images/project1.png"
+          title="XSSVIS"
+          desc="Project for detecting Cross-site scripting attacks using deep learning and computer vision"
+          techs={["React js", "Fastapi", "Tensorflow", "Numpy"]}
           link="/"
         />
       </div>
