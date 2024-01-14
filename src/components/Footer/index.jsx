@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <div className="text-xs font-poppins text-center mb-5 border-t border-t-slate-100 dark:border-t-slate-900">
-      <p className="mb-2 mt-5">mikias0x00@outlook.com</p>
+      <p className="mb-2 mt-5">mikiaszardoz0x00c@outlook.com</p>
       <p>Updated on: {readableDate}</p>
     </div>
   );
