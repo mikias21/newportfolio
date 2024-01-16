@@ -13,7 +13,7 @@ const Blog = () => {
           title="Dokerize Vue frontend with Fastapi and Mariadb."
           desc="Interconnecting docker containers in a simplest way possible."
           techs={["docker", "vue", "fastapi, mariadb"]}
-          img="https://miro.medium.com/v2/resize:fit:494/format:webp/1*Xog9AmgmzZmIChm51L6sGA.png"
+          img="/images/docker.webp"
           link="https://medium.com/@mikiasmesfina0123/dokerize-vue-frontend-with-fastapi-and-mariadb-ab9b8ec9195d"
         />
       </div>
