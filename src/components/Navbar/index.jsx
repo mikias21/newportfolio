@@ -41,6 +41,13 @@ const Navbar = () => {
     }
   };
 
+  const scrollToBlog = () => {
+    const projectsSection = document.getElementById("blog");
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="fixed top-0 w-full bg-white flex items-center justify-between p-4 font-poppins text-black border-b border-b-slate-100 shadow-lg dark:text-white dark:bg-[#000] dark:border-b-slate-900 dark:shadow-black">
       <div className="text-xl">Mikias.B</div>
@@ -77,6 +84,13 @@ const Navbar = () => {
               About
             </Link>
             <Link
+              to="#blog"
+              className="p-2 hover:underline"
+              onClick={scrollToBlog}
+            >
+              Blog
+            </Link>
+            <Link
               to="#contact"
               className="p-2 hover:underline"
               onClick={scrollToContact}
@@ -109,6 +123,13 @@ const Navbar = () => {
           onClick={scrollToAbout}
         >
           About
+        </Link>
+        <Link
+          to="#blog"
+          className="text-sm hover:underline"
+          onClick={scrollToBlog}
+        >
+          Blog
         </Link>
         <Link
           to="#contact"

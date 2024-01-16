@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import { Typing } from "react-typing-animate";
+import { LiaDownloadSolid } from "react-icons/lia";
 
 const Hero = () => {
   return (
@@ -23,10 +25,15 @@ const Hero = () => {
           deliver streamlined and secure outcomes.
         </p>
       </div>
-      <div className="mt-8 font-poppins">
-        <button className="bg-blue-700 w-40 text-white p-3 text-xs rounded-2xl shadow-md sm:text-sm">
+      <div className="mt-8 font-poppins flex items-center bg-blue-700 w-48 text-white p-4 text-xs rounded-md shadow-md sm:text-sm justify-center gap-4">
+        <Link
+          className=""
+          target="_blank"
+          to="https://resume-mikias.netlify.app/"
+        >
           Download CV
-        </button>
+        </Link>
+        <LiaDownloadSolid className="text-lg" />
       </div>
     </div>
   );

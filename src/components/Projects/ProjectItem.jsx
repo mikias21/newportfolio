@@ -9,7 +9,7 @@ const ProjectItem = ({ img, title, desc, techs, link }) => {
         </div>
         <div className="mt-2">
           <p className="text-xs font-semibold sm:text-sm">{title}</p>
-          <p className="mt-2">{desc}</p>
+          <p className="mt-2 text-xs">{desc}</p>
         </div>
         <div className="mt-2">
           <ul className="list-disc ml-4 list-item">

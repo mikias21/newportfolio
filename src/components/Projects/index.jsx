@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -20,33 +21,37 @@ const Projects = () => {
         <ProjectItem
           img="/images/project2.png"
           title="XSSVIS"
-          desc="Project for detecting Cross-site scripting attacks using deep learning and computer vision."
+          desc="Detecting XSS attacks using deep learning and computer vision from HTTP request."
           techs={["React js", "Fastapi", "Tensorflow, Numpy, matplotlib"]}
           link="https://xssvis.netlify.app/"
         />
       </div>
       <div className="w-full sm:w-1/2 sm:pr-2 md:w-1/2 lg:w-1/2 xl:w-1/4 mb-5 md:pr-3">
         <ProjectItem
-          img="/images/project2.png"
-          title="Here is title"
-          desc="This will be the description about the project and some"
-          techs={["React js", "Node", "Redux"]}
-          link="/"
+          img="/images/covidtracker.gif"
+          title="Covid-19 tracker"
+          desc="Web app fetchs covid 19 data and displays it in a visual form."
+          techs={["React js", "Openstreetmap", "CSS"]}
+          link="https://mikias-covid-tracker-lol.netlify.app/"
         />
       </div>
       <div className="w-full sm:w-1/2 sm:pr-2 md:w-1/2 lg:w-1/2 xl:w-1/4 mb-5 md:pr-3">
         <ProjectItem
-          img="/images/project2.png"
-          title="Here is title"
-          desc="This will be the description about the project and some"
-          techs={["React js", "Node", "Redux"]}
-          link="/"
+          img="/images/facebookclone.gif"
+          title="Facebook clone"
+          desc="full authentication, functionality to store posts on firestore database."
+          techs={["React js", "Firebase/firestore", "tailwind"]}
+          link="https://mikias-facebookclone-react.netlify.app/"
         />
       </div>
       <div>
-        <button className="bg-blue-700 w-32 p-1 text-white text-xs rounded-2xl shadow-md sm:text-sm">
-          More projects
-        </button>
+        <Link
+          className="bg-blue-700 w-32 p-2 text-white text-xs rounded-2xl shadow-md font-poppins"
+          target="_blank"
+          to="https://github.com/mikias21"
+        >
+          More projects on github
+        </Link>
       </div>
     </div>
   );

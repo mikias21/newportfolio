@@ -1,5 +1,6 @@
 // Components
 import Hero from "./components/Hero";
+import Blog from "./components/Blog";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills";
@@ -15,6 +16,7 @@ function App() {
       <Projects />
       <Skills />
       <About />
+      <Blog />
       <Contact />
       <Footer />
     </div>
