@@ -13,9 +13,9 @@ function App() {
     <div className="dark:bg-[#000] dark:text-white overflow-hidden">
       <Navbar />
       <Hero />
-      <Projects />
-      <Skills />
       <About />
+      <Skills />
+      <Projects />
       <Blog />
       <Contact />
       <Footer />

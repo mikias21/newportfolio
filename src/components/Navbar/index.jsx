@@ -63,11 +63,11 @@ const Navbar = () => {
         {dropdownOpen && (
           <div className="absolute right-0 mt-2 flex flex-col w-40 p-3 text-xs border border-slate-50 bg-slate-50 rounded-md shadow-sm dark:text-white dark:bg-[#000] dark:border-slate-900 dark:shadow-black">
             <Link
-              to="#projects"
+              to="#about"
               className="p-2 hover:underline"
-              onClick={scrollToProjects}
+              onClick={scrollToAbout}
             >
-              Projects
+              About
             </Link>
             <Link
               to="#skills"
@@ -77,11 +77,11 @@ const Navbar = () => {
               Skills
             </Link>
             <Link
-              to="#about"
+              to="#projects"
               className="p-2 hover:underline"
-              onClick={scrollToAbout}
+              onClick={scrollToProjects}
             >
-              About
+              Projects
             </Link>
             <Link
               to="#blog"
@@ -104,11 +104,11 @@ const Navbar = () => {
 
       <div className="hidden md:flex space-x-4">
         <Link
-          to="#projects"
+          to="#about"
           className="text-sm hover:underline"
-          onClick={scrollToProjects}
+          onClick={scrollToAbout}
         >
-          Projects
+          About
         </Link>
         <Link
           to="#skills"
@@ -118,11 +118,11 @@ const Navbar = () => {
           Skills
         </Link>
         <Link
-          to="#about"
+          to="#projects"
           className="text-sm hover:underline"
-          onClick={scrollToAbout}
+          onClick={scrollToProjects}
         >
-          About
+          Projects
         </Link>
         <Link
           to="#blog"
