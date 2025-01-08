@@ -30,7 +30,8 @@ const Hero = () => {
             <Link
               className=""
               target="_blank"
-              to="https://resume-mikias.netlify.app/"
+              download
+              to="./mikias_012025_software.pdf"
             >
               Download CV
             </Link>
