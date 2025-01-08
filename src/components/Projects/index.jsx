@@ -10,27 +10,33 @@ const Projects = () => {
     >
       <p className="text-lg font-poppins w-full mb-5 sm:text-2xl">Projects</p>
       <section>
-      <h2 className="text-xl font-semibold mb-4 mt-5 text-green-500">active projects</h2>
         <div className="grid grid-cols-1 gap-8">
           <MainProjectItem 
             img="/images/project1.png"
             title="Passit"
-            desc="Project used to store, manage and access passwords securly. Currently 20 active users."
+            desc="A secure, fast, and user-friendly password management application designed for storing, sharing, and managing passwords with flexibility."
             techs={["React js", "FastAPI", "MongoDB"]}
             link="https://passitt.netlify.app/"
           />
           <MainProjectItem 
-            img="/images/project1.png"
-            title="Passit"
-            desc="Project used to store, manage and access passwords securly. Currently 20 active users."
-            techs={["React js", "FastAPI", "MongoDB"]}
+            img="/images/project2.png"
+            title="XSSVIS"
+            desc="A deep learning-based malicious web request detection system focused on XSS vulnerabilities. The model converts HTTP URLs into images to analyze anomalies and detect injection attempts, offering flexibility for other vulnerabilities and deployment as a standalone validator, proxy, or browser plugin."
+            techs={["Tensorflow", "Numpy", "Pandas", "FastAPI", "React JS"]}
             link="https://passitt.netlify.app/"
           />
           <MainProjectItem 
-            img="/images/project1.png"
-            title="Passit"
-            desc="Project used to store, manage and access passwords securly. Currently 20 active users."
-            techs={["React js", "FastAPI", "MongoDB"]}
+            img="/images/project3.png"
+            title="Dorkitall"
+            desc="A lightweight Google Dorking query app for pentesters, enabling search by tags, categorization of queries, and success ratings to assist in identifying effective dorks for streamlined assessments."
+            techs={["NextJS", "Flask", "MongoDB"]}
+            link="https://passitt.netlify.app/"
+          />
+          <MainProjectItem 
+            img="/images/project4.png"
+            title="Fintrack"
+            desc="Lightweight mobile app for tracking expenses, allowing users to easily manage incomes, savings, and daily expenses while providing detailed reports across daily, weekly, monthly, and yearly timelines."
+            techs={["React Native", "Node Js", "MongoDB"]}
             link="https://passitt.netlify.app/"
           />
         </div>
@@ -38,12 +44,12 @@ const Projects = () => {
 
 
       <section className="container mx-auto px-4 py-8">
-        <h2 className="text-xl font-semibold mt-5 text-slate-700">Archived projects</h2>
+        <h2 className="text-xl font-semibold mt-5 text-slate-400">Archived projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           <ProjectItem
             img="/images/project1.png"
             title="Passit"
-            desc="Project used to store, manage and access passwords securly. Currently 20 active users."
+            desc="A secure, fast, and user-friendly password management application designed for storing, sharing, and managing passwords with flexibility."
             techs={["React js", "FastAPI", "MongoDB"]}
             link="https://passitt.netlify.app/"
           />
@@ -71,14 +77,15 @@ const Projects = () => {
         </div>
       </section>
 
-      <div>
+      <div className="flex items-center justify-center space-x-3 bg-blue-700 w-48 p-2 text-white text-xs rounded-2xl shadow-md font-poppins dark:bg-transparent dark:border dark:border-gray-100">
         <Link
-          className="bg-blue-700 w-32 p-2 text-white text-xs rounded-2xl shadow-md font-poppins"
+          className=""
           target="_blank"
           to="https://github.com/mikias21"
         >
-          More projects on github
+          Checkout my Git
         </Link>
+        <img src="/images/icons/git.png" alt="GIT" className="w-10 h-10 bg-white rounded-full"/>
       </div>
     </div>
   );
