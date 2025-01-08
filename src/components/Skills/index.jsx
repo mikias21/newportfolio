@@ -1,4 +1,3 @@
-import SkillIndicator from "./SkillIndicator";
 import SkillContainer from "./SkillContainer";
 
 const Skills = () => {
